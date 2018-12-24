@@ -154,13 +154,13 @@ if __name__ == '__main__':
     cfg.word_count = 15
 
     # directories and files
-    cfg.train_qdb_fn = '../coqa/train_db'
-    cfg.val_qdb_fn = '../coqa/val_db'
-    cfg.test_qdb_fn = '../test/test_db'
+    cfg.train_qdb_fn = '../data/coqa/train_db'
+    cfg.val_qdb_fn = '../data/coqa/val_db'
+    cfg.test_qdb_fn = '../data/test/test_db'
 
-    cfg.embed_matrix_fn = '../word_embedding/embed_matrix.npy'
-    cfg.vocab_file_fn = '../word_embedding/vocabulary_72700.txt'
+    cfg.embed_matrix_fn = '../data/word_embedding/embed_matrix.npy'
+    cfg.vocab_file_fn = '../data/word_embedding/vocabulary_72700.txt'
 
-    cfg.test_dump_fn = '../test/test_results'
+    cfg.test_dump_fn = '../data/test/test_results'
 
     main(cfg)

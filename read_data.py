@@ -45,7 +45,7 @@ def get_data(file_name, quest_freq):
 
 
 def make_qdb():
-    data_dir = "../coqa"
+    data_dir = "../data/coqa"
     train_file = osp.join(data_dir, 'coqa-train-v1.0.json')
     val_file = osp.join(data_dir, 'coqa-dev-v1.0.json')
     quest_freq = 0.1
@@ -76,8 +76,8 @@ def preprocess_test_input(line_input):
 
 
 def read_test_data():
-    file_loc = "../test/test-inputs.txt"
-    test_qdb_fn = '../test/test_db'
+    file_loc = "../data/test/test-inputs.txt"
+    test_qdb_fn = '../data/test/test_db'
 
     with open(file_loc, 'r') as f_:
         text = f_.read()
