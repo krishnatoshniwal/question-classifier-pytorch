@@ -26,24 +26,15 @@ story resembled the test given to me.
 * Set maximum words as 15, padded with zero
 * Used GloVe 300d with 72704 words
 * Finetuned the embedding
-* I left the batch size at 10 - So that it isn't so heavy on my laptop - Can be increased
+* Batch size - 10 - So that it isn't so heavy on my laptop - Can be increased
 
 
 ### Model
-* My model is a vanilla LSTM model, I didn't go ahead with any attention based approach 
-because I was already getting 99% train and val accuracy. 
+* Vanilla LSTM model, No attention - 99% train and val accuracy. 
 * 1 layer - unidirectional (Can be changed to bidirectional in the main function)
-* Set a dropout rate of 0.4
+* A dropout rate of 0.4
 
 
 ### Results
 * The model gets trained pretty well in 1 epoch - upto 99% accuracy. So I set the max number of epochs as 2
 * I checked the test results for a few samples and the model does make some errors, but overall it works well.
-
-
-### Some other things which could be done
-* Try out other machine learning based approaches like logistic regression or bag of words etc, as its very easy 
-to find whether a sentence is question or not just by the presence of wh and other interrogative 
-words.
-* Exploratory data analysis. If the data is suitable for test data or not.
-* Add some heuristics which detect a question mark or some trigger words and immediately label as a question.
